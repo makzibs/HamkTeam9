@@ -123,32 +123,38 @@ public class MoveForward extends Thread {
 			
 			
 			
-			//takes left turn for 0.7sec
+			//takes left turn 
 			leftWheel.setSpeed(300);
             rightWheel.setSpeed(100);
             leftWheel.forward();
             rightWheel.forward();
-            Delay.msDelay(900);
+            Delay.msDelay(800);
+            
+            
+            //moves forward
     	 
             leftWheel.setSpeed(150);
             rightWheel.setSpeed(150);
             leftWheel.forward();
             rightWheel.forward();
             Delay.msDelay(2000);
+            
+            
+            //takes right turn
              
             
             leftWheel.setSpeed(100);
             rightWheel.setSpeed(300);
             leftWheel.forward();
             rightWheel.forward();
-            Delay.msDelay(1600);
+            Delay.msDelay(1500);
     	  
             		
  			
  			
  			while(DEObj.getIsColourDetected() == 3) {
  			
- 			//takes left right for 0.7sec
+ 			//continues to move forwards until it meets the black track
 			 leftWheel.setSpeed(100);
              rightWheel.setSpeed(100);
              leftWheel.forward();
